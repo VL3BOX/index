@@ -98,7 +98,7 @@ export default {
                     list: list.map((item) => {
                         return {
                             id: item.id,
-                            Name: item.Name,
+                            Name: item.Name.replace("声望·", ""),
                             IconID: item.IconID,
                             Quality: item.Quality,
                             Desc: /中(.*)\\\\\\/.exec(item.Desc)[1].trim(),
